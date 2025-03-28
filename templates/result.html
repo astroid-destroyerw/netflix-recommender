@@ -6,8 +6,8 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/result.css') }}" />
 </head>
 <body>
-<div class=page>
-  <h1>Here are your recommendations....</h1>
+<div align="center">
+  <h1 align="center">Here are your recommendations....</h1>
   {% for table in tables %}
     <h2>{{titles[loop.index]}}</h2>
     {{ table|safe }}

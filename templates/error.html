@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        .error-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #e50914;
+        }
+        .error-message {
+            color: #333;
+            margin: 20px 0;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Oops! Something went wrong</h1>
+        <p class="error-message">{{ error }}</p>
+        <a href="/" class="back-button">Go Back Home</a>
+    </div>
+</body>
+</html> 
